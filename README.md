@@ -1,30 +1,20 @@
 # leaflet-challenge
 Assignment 15 - Web Mapping
 
-Part 1: Create the Earthquake Visualisation
+Creating Earthquake Visualisation
 
-Your first task is to visualise an earthquake dataset. Complete the following steps:
+This task is to visualise an earthquake dataset. 
 
-Get your dataset. To do so, follow these steps:
+This was carried out with the following steps:
 
-The USGS provides earthquake data in a number of different formats, updated every 5 minutes. Visit the USGS GeoJSON Feed Links to an external site.page and choose a dataset to visualise. The following image is an example screenshot of what appears when you visit this link:
+Get dataset from the USGS that provides earthquake data in a number of different formats and updated every 5 minutes. The USGS GeoJSON Feed Links (https://earthquake.usgs.gov/earthquakes/feed/v1.0/geojson.php) has the dataset to visualise. 
 
+Using the dataset such as "All Earthquakes from the Past 7 Days", a JSON representation of that data will be given. The URL of this JSON was used to pull in the data for the visualisation.
 
-When you click a dataset (such as "All Earthquakes from the Past 7 Days"), you will be given a JSON representation of that data. Use the URL of this JSON to pull in the data for the visualisation. The following image is a sampling of earthquake data in JSON format:
+Using Leaflet, a map was created that plots all the earthquakes from the dataset based on their longitude and latitude.
 
-image.png
+Data markers were added that reflect the magnitude of the earthquake by their size and the depth of the earthquake by colour. Earthquakes with higher magnitudes would appear larger, and earthquakes with greater depth would appear darker in colour.
 
-Import and visualise the data by doing the following:
+Popups that provide additional information about the earthquake when its associated marker is clicked was added.
 
-Using Leaflet, create a map that plots all the earthquakes from your dataset based on their longitude and latitude.
-
-Your data markers should reflect the magnitude of the earthquake by their size and the depth of the earthquake by colour. Earthquakes with higher magnitudes should appear larger, and earthquakes with greater depth should appear darker in colour.
-
-Hint: The depth of the earth can be found as the third coordinate for each earthquake.
-
-Include popups that provide additional information about the earthquake when its associated marker is clicked.
-
-Create a legend that will provide context for your map data.
-
-Your visualisation should look something like the preceding map.
-
+A legend was alos created that provide context to the map data.
